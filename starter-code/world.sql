@@ -1,7 +1,8 @@
 CREATE DATABASE world;
 \connect world
-
+-- this drops the table `city` and removes it from any other databases
 DROP TABLE IF EXISTS city CASCADE;
+
 DROP TABLE IF EXISTS country CASCADE;
 DROP TABLE IF EXISTS countrylanguage CASCADE;
 
